@@ -1,0 +1,102 @@
+body {
+  background-image: url("/assets/home/background-home-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-container {
+  margin-top: 5rem;
+  text-align: center;
+  max-width: 1200px;
+
+  span {
+    font-size: clamp(1.6rem, 4vw, 4rem);
+    font-family: var(--Barlow);
+    letter-spacing: 0.27rem;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: clamp(8rem, 7vw, 15rem);
+    font-family: var(--Bellefair);
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    max-width: 45rem;
+
+    font-family: var(--Barlow);
+    margin-top: 1rem;
+    color: var(--light-blue);
+    line-height: 1.5;
+    margin: 1rem auto;
+  }
+
+  .explore {
+    width: 16rem;
+    height: 16rem;
+    margin: 5rem auto;
+    background-color: var(--white);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all .3s ease;
+    a {
+      display: block;
+      font-size: 3rem;
+      text-decoration: none;
+      color: var(--dark-blue);
+      font-family: var(--Bellefair);
+      text-transform: uppercase;
+    }
+    &:hover{
+    // box-shadow:  -1px 5px 136px var(--dark-grey);
+    box-shadow: -2px -1px 5px 95px rgba(0,0,0,0.51);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("/assets/home/background-home-tablet.jpg");
+  }
+  .home-container {
+    margin-top: 5rem;
+    span {
+      margin-top: 4rem;
+    }
+
+    h1 {
+      font-size: clamp(8rem, 20vw, 15rem);
+    }
+
+    .explore {
+      margin-top: 10rem;
+      width: 26rem;
+      height: 26rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("/assets/home/background-home-desktop.jpg");
+  }
+
+  .home-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: end;
+
+    .explore {
+      margin: 0;
+    }
+  }
+}

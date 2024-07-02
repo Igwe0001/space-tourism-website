@@ -1,0 +1,21 @@
+.title {
+  text-align: center;
+  span {
+    font-size: clamp(1.6rem, 4vw, 3rem);
+    font-family: var(--Barlow);
+    letter-spacing: 0.27rem;
+    display: block;
+    text-transform: uppercase;
+
+    b {
+      color: var(--dark-grey);
+      margin: 0 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    text-align: left;
+  }
+}

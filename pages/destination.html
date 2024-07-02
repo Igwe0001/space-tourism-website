@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body class="destination-body">
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="/assets/shared/logo.svg" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-list-container">
+                <li class="nav-list"><a class="nav-link" href="/index.html"><b>00</b> Home</a></li>
+                <li class="nav-list"><a class="nav-link active-link" href="#"><b>01</b> Destination</a></li>
+                <li class="nav-list"><a class="nav-link" href="/pages/crew.html"><b>02</b> Crew</a></li>
+                <li class="nav-list"><a class="nav-link" href="/pages/technology.html"><b>03</b> Technology</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-container">
+            <img class="hamburger" src="/assets/shared/icon-hamburger.svg" alt="hamburger">
+        </div>
+    </header>
+    <main class="destination-container">
+        <div class="title">
+            <span><b>01</b>Pick your destination</span>
+        </div>
+        <div class="destination-tab">
+            <div class="destination-image-container">
+                <!-- Data coming from js -->
+            </div>
+            <div class="destination-data-Container">
+                <div class="destination-tabs">
+                    <button class="destination-button active" data-roll="0">Moon</button>
+                    <button class="destination-button" data-roll="1">Mars</button>
+                    <button class="destination-button" data-roll="2">Europa</button>
+                    <button class="destination-button" data-roll="3">Titan</button>
+                </div>
+                <div class="destination-data-data">
+                    <div class="destination-data">
+                        <div class="destination-data-header">
+                            <!-- Data coming from js -->
+                        </div>
+                        <div class="destinatiodn-data-body">
+                            <!-- Data coming from js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script type="module" src="/script.js"></script>
+</body>
+
+</html>

@@ -37,7 +37,7 @@ body {
 main {
   margin: 0 auto;
   margin-top: 1.5rem;
-  max-width: 1400x;
+  max-width: 1400px;
 }
 
 header {
@@ -51,7 +51,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1400px;
-  max-width: 0 auto;
+  margin: 0 auto;
 }
 
 .logo-container {
